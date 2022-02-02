@@ -1,10 +1,7 @@
 import React from 'react';
 
-export default function FoodImages({ foodId, drinkId, sideId }) {
+export default function FoodImages({ FoodId }) {
   return <div className='food-images'>
-    <img src={`food-${foodId}.jpeg`} />
-    <img src={`drink-${drinkId}.png`} />
-    <img src={`side-${sideId}.jpeg`} />
-    
+    <img src={`food-${FoodId}.jpeg`} />
   </div>;
 }
