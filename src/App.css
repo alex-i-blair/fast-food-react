@@ -24,6 +24,22 @@
   color: white;
 }
 
+.food-images {
+  /* background-color: magenta; */
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dropdowns {
+  
+}
+img {
+  height: 300px;
+  width: auto;
+  margin: 20px;
+}
 .App-link {
   color: #61dafb;
 }

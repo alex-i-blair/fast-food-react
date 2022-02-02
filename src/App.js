@@ -23,7 +23,7 @@ function App() {
           drinkId={DrinkId}
           sideId={SideId}
         />
-        <div>
+        <div className='dropdowns'>
           <FoodDropdown setFoodId={setFoodId} />
           <DrinkDropdown setDrinkId={setDrinkId} />
           <SideDropdown setSideId={setSideId} />
