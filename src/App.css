@@ -62,9 +62,14 @@ img {
 .display-cards {
   /* background-color: magenta; */
   display: flex;
-  width: fit-content;
+  width: 100%;
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .item-display-card {
+  /* background-color: magenta; */
+
 }
