@@ -5,6 +5,7 @@ import FoodImage from './FoodImage';
 import FoodDropdown from './FoodDropdown';
 import DrinkDropdown from './DrinkDropdown';
 import SideDropdown from './SideDropdown';
+import InstructionForm from './InstructionForm';
 
 function App() {
   const [OrderName, setOrderName] = useState('Customer');
@@ -37,8 +38,18 @@ function App() {
           <SideDropdown setSideId={setSideId} />
         </div>
       </section>
-      {/* <InstructionForm
-        Instructions={Instructions} setInstructions={setInstructions} /> */}
+      <InstructionForm
+        instructions={instructions} setInstructions={setInstructions} />
+      <div className='instructions-container'>
+        <ul className='instructions-list'>
+          {
+            instructions.map((instruction, i) => 
+              <li key={instruction + i}>
+                {instruction}
+              </li>)
+          }
+        </ul>
+      </div>
     </div>
   );
 }

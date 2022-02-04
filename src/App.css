@@ -13,6 +13,26 @@
   }
 }
 
+.instructions-container {
+  /* background-color: magenta; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.instructions-list {
+  /* background-color: blanchedalmond; */
+  width: fit-content;
+  min-width: 100px;
+  min-height: 20px;
+  margin: 0;
+  border: solid black 1px;
+  border-radius: 10px;
+  text-align: left;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
