@@ -13,6 +13,26 @@
   }
 }
 
+.instructions-container {
+  /* background-color: magenta; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.instructions-list {
+  /* background-color: blanchedalmond; */
+  width: fit-content;
+  min-width: 100px;
+  min-height: 20px;
+  margin: 0;
+  border: solid black 1px;
+  border-radius: 10px;
+  text-align: left;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,6 +44,39 @@
   color: white;
 }
 
+.food-images {
+  /* background-color: magenta; */
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dropdowns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  border-radius: 10px;
+  text-align: center;
+}
+
+input {
+  border-radius: 10px;
+  margin: 5px;
+}
+img {
+  height: 200px;
+  width: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +88,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.display-cards {
+  /* background-color: magenta; */
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.item-display-card {
+  width: 210px;
+  /* background-color: magenta; */
+
 }
