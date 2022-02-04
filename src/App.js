@@ -13,6 +13,7 @@ function App() {
   const [drinkId, setDrinkId] = useState(1);
   const [sideId, setSideId] = useState(1);
   const [instructions, setInstructions] = useState([]);
+  const [listClass, setListClass] = useState(false);
 
   return (
     <div className="App">
@@ -39,13 +40,16 @@ function App() {
         </div>
       </section>
       <InstructionForm
-        instructions={instructions} setInstructions={setInstructions} />
+        instructions={instructions} setInstructions={setInstructions} setListClass={setListClass} />
       <div className='instructions-container'>
-        <ul className='instructions-list'>
+        <ul className = {
+          listClass && 'instructions-list'
+        }>
           {
             instructions.map((instruction, i) => 
               <li key={instruction + i}>
                 {instruction}
+
               </li>)
           }
         </ul>

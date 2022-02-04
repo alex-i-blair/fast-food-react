@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function InstructionForm({ instructions, setInstructions }) {
+export default function InstructionForm({ instructions, setInstructions, setListClass }) {
   
   const [instructionInForm, setInstructionInForm] = useState('');
   
@@ -8,6 +8,7 @@ export default function InstructionForm({ instructions, setInstructions }) {
     e.preventDefault();
     setInstructions([...instructions, instructionInForm]);
     setInstructionInForm('');
+    setListClass(true);
   }
 
   function handleInstructionChange(e) {
